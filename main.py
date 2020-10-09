@@ -6,9 +6,9 @@ import random  # Importamos random para numeros al azar
 # http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=VICTORIA!!!%0A
 
 
-#****************************************************************
-#***********************  AHORCADO  *****************************
-#****************************************************************
+# ****************************************************************
+# ***********************  AHORCADO  *****************************
+# ****************************************************************
 # Tablero de Juego
 AHORCADO = ['''
       +---+
@@ -71,7 +71,7 @@ errores = 0  # Numero de veces que se equivoco el usuario
 
 linea = []  # Lista donde estaran _ _ _ _ _ _ ...
 
-#*****************************************************************
+# *****************************************************************
 
 
 system('cls')
@@ -119,7 +119,8 @@ ___  ___      _                       _   _
             if op == 1:
                 system('cls')
                 print('PRINCIPIANTE\n')
-                print('Escribe las respuestas de las prguntas de la forma más simplificada y en fracción')
+                print(
+                    'Escribe las respuestas de las prguntas de la forma más simplificada y en fracción')
                 p1 = input('1. Teclea la respuesta de 3/6 + 2/3: ')
                 if p1 == '7/6':
                     print('¡Correcto!\n')
@@ -136,24 +137,31 @@ ___  ___      _                       _   _
                             if p4 == '7/20':
                                 print('¡Correcto!\n')
                                 system('cls')
-                                p5 = input('5. Teclea la respuesta de 3/7 * 1/6: ')
+                                p5 = input(
+                                    '5. Teclea la respuesta de 3/7 * 1/6: ')
                                 if p5 == '1/14':
-                                    print('¡Felicidades, haz completado correctamente el nivel!\n')
+                                    print(
+                                        '¡Felicidades, haz completado correctamente el nivel!\n')
                                     system('pause')
                                 else:
                                     system('cls')
                                     print('INCORRECTO')
                                     print('Pasos:')
-                                    print('Multiplicar numeradores= 3*1 -> 3, y denominadores= 7*6 -> 42, el resultado sería 3/42')
-                                    print('Simplificar para que salga la respuesta correcta -> 1/14')
-                                    print('Se te regresará al menú de matemáticas')
+                                    print(
+                                        'Multiplicar numeradores= 3*1 -> 3, y denominadores= 7*6 -> 42, el resultado sería 3/42')
+                                    print(
+                                        'Simplificar para que salga la respuesta correcta -> 1/14')
+                                    print(
+                                        'Se te regresará al menú de matemáticas')
                                     system('pause')
                             else:
                                 system('cls')
                                 print('INCORRECTO')
                                 print('Pasos:')
-                                print('Buscar el común denominador-> 40, dividir 40 por el primer denominador y multiplicar el resultado por el numerador-> 40/5=8>> 8*3=24, se hace lo mismo con la otra fracción')
-                                print('Después, se restan los resultados -> 24-10=14, por lo que la respuesta daría 14/40')
+                                print(
+                                    'Buscar el común denominador-> 40, dividir 40 por el primer denominador y multiplicar el resultado por el numerador-> 40/5=8>> 8*3=24, se hace lo mismo con la otra fracción')
+                                print(
+                                    'Después, se restan los resultados -> 24-10=14, por lo que la respuesta daría 14/40')
                                 print('Simplifica para que te de el resultado 7/20')
                                 print('Se te regresará al menú de matemáticas')
                                 system('pause')
@@ -162,7 +170,8 @@ ___  ___      _                       _   _
                             print('INCORRECTO')
                             print('Pasos:')
                             print('Buscar el común denominador-> 24, dividir 24 por el primer denominador y multiplicar el resultado por el numerador-> 24/6=4>> 4*5=20, se hace lo mismo con la otra fracción')
-                            print('Después, se restan los resultados -> 20-18=2, por lo que la respuesta daría 2/24')
+                            print(
+                                'Después, se restan los resultados -> 20-18=2, por lo que la respuesta daría 2/24')
                             print('Simplifica para que te de el resultado 1/12')
                             print('Se te regresará al menú de matemáticas')
                             system('pause')
@@ -171,8 +180,10 @@ ___  ___      _                       _   _
                         print('INCORRECTO')
                         print('Pasos:')
                         print('Buscar el común denominador-> 18, dividir 18 por el primer denominador y multiplicar el resultado por el numerador-> 18/9=2>> 2*4=8, se hace lo mismo con la otra fracción')
-                        print('Después, se suman los resultados -> 8+9=17, por lo que la respuesta daría 17/18')
-                        print('Se queda 17/18 como resultado porque no se puede simplificar')
+                        print(
+                            'Después, se suman los resultados -> 8+9=17, por lo que la respuesta daría 17/18')
+                        print(
+                            'Se queda 17/18 como resultado porque no se puede simplificar')
                         print('Se te regresará al menú de matemáticas')
                         system('pause')
                 else:
@@ -180,15 +191,17 @@ ___  ___      _                       _   _
                     print('INCORRECTO')
                     print('Pasos:')
                     print('Buscar el común denominador-> 6, dividir 6 por el primer denominador y multiplicar el resultado por el numerador-> 6/6=1>> 1*3=3, se hace lo mismo con la otra fracción')
-                    print('Después, se suman los resultados -> 3+4=7, por lo que la respuesta daría 7/6')
+                    print(
+                        'Después, se suman los resultados -> 3+4=7, por lo que la respuesta daría 7/6')
                     print('Se queda 7/6 como resultado porque no se puede simplificar')
                     print('Se te regresará al menú de matemáticas')
-                    system('pause')                              
-                                        
+                    system('pause')
+
             elif op == 2:
                 system('cls')
                 print('INTERMEDIO\n')
-                print('Escribe las respuestas de las prguntas de la forma más simplificada')
+                print(
+                    'Escribe las respuestas de las prguntas de la forma más simplificada')
                 p1 = input('1. Teclea la respuesta de x + 4 = 8: ')
                 if p1 == '4':
                     print('¡Correcto!\n')
@@ -201,29 +214,37 @@ ___  ___      _                       _   _
                         if p3 == '6':
                             print('¡Correcto!\n')
                             system('cls')
-                            p4 = input('4. Teclea la respuesta de (x/2) - 6 = 12: ')
+                            p4 = input(
+                                '4. Teclea la respuesta de (x/2) - 6 = 12: ')
                             if p4 == '36':
                                 print('¡Correcto!\n')
                                 system('cls')
-                                p5 = input('5. Teclea la respuesta de (x/3) + 23 = 5: ')
+                                p5 = input(
+                                    '5. Teclea la respuesta de (x/3) + 23 = 5: ')
                                 if p5 == '-54':
-                                    print('¡Felicidades, haz completado correctamente el nivel!\n')
+                                    print(
+                                        '¡Felicidades, haz completado correctamente el nivel!\n')
                                     system('pause')
                                 else:
                                     system('cls')
                                     print('INCORRECTO')
                                     print('Pasos:')
-                                    print('Mover el 23 al otro lado del igual pero con signo contrario -> x/3 = 5 - 23; sumar los numeros -> x/3 = -18')
-                                    print('Pasar al 3 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = -18 * 3 -> x = -54')
+                                    print(
+                                        'Mover el 23 al otro lado del igual pero con signo contrario -> x/3 = 5 - 23; sumar los numeros -> x/3 = -18')
+                                    print(
+                                        'Pasar al 3 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = -18 * 3 -> x = -54')
                                     print('La respuesta es -54')
-                                    print('Se te regresará al menú de matemáticas')
+                                    print(
+                                        'Se te regresará al menú de matemáticas')
                                     system('pause')
                             else:
                                 system('cls')
                                 print('INCORRECTO')
                                 print('Pasos:')
-                                print('Mover el -6 al otro lado del igual pero con signo contrario -> x/2 = 12 + 6; sumar los numeros -> x/2 = 18')
-                                print('Pasar al 2 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = 18 * 2 ->x = 36')
+                                print(
+                                    'Mover el -6 al otro lado del igual pero con signo contrario -> x/2 = 12 + 6; sumar los numeros -> x/2 = 18')
+                                print(
+                                    'Pasar al 2 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = 18 * 2 ->x = 36')
                                 print('La respuesta es 36')
                                 print('Se te regresará al menú de matemáticas')
                                 system('pause')
@@ -231,8 +252,10 @@ ___  ___      _                       _   _
                             system('cls')
                             print('INCORRECTO')
                             print('Pasos:')
-                            print('Mover el -3 al otro lado del igual pero con signo contrario -> 4x = 21+3; sumar los numeros -> 4x = 24')
-                            print('Pasar al 4 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/24 ->x = 6')
+                            print(
+                                'Mover el -3 al otro lado del igual pero con signo contrario -> 4x = 21+3; sumar los numeros -> 4x = 24')
+                            print(
+                                'Pasar al 4 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/24 ->x = 6')
                             print('La respuesta es 6')
                             print('Se te regresará al menú de matemáticas')
                             system('pause')
@@ -240,8 +263,10 @@ ___  ___      _                       _   _
                         system('cls')
                         print('INCORRECTO')
                         print('Pasos:')
-                        print('Mover el 6 al otro lado del igual pero con signo contrario -> 2x = 10-6; restar los numeros -> 2x = 4')
-                        print('Pasar al 2 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/2 ->x = 2')
+                        print(
+                            'Mover el 6 al otro lado del igual pero con signo contrario -> 2x = 10-6; restar los numeros -> 2x = 4')
+                        print(
+                            'Pasar al 2 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/2 ->x = 2')
                         print('La respuesta es 2')
                         print('Se te regresará al menú de matemáticas')
                         system('pause')
@@ -249,8 +274,10 @@ ___  ___      _                       _   _
                     system('cls')
                     print('INCORRECTO')
                     print('Pasos:')
-                    print('Mover el 4 al otro lado del igual pero con signo contrario -> x= 8-4')
-                    print('Restar los números 8-4=2,->x = 2, por lo que la respuesta sería 4')
+                    print(
+                        'Mover el 4 al otro lado del igual pero con signo contrario -> x= 8-4')
+                    print(
+                        'Restar los números 8-4=2,->x = 2, por lo que la respuesta sería 4')
                     print('Se te regresará al menú de matemáticas')
                     system('pause')
             elif op == 3:
@@ -318,17 +345,18 @@ ___  ___      _                       _   _
             opc = int(input('Escribe el número de la opción que quieras: '))
             if opc == 1:
                 system('cls')
-                #*****************************************************************************
-                # Creamos un Juego nuevo 
-                
+                # *****************************************************************************
+                # Creamos un Juego nuevo
+
                 # Preguntas
-                pregCiencia = ['¿Quién es el autor de E=mc^2?', 'Fórmula Química del Agua', '¿Cuántos planetas tiene el Sistema Solar?', '¿Cuál es un Ph neutro?', '¿A partir del Sol qué número de planeta es la Tierra?']
+                pregCiencia = ['¿Quién es el autor de E=mc^2?', 'Fórmula Química del Agua', '¿Cuántos planetas tiene el Sistema Solar?',
+                               '¿Cuál es un Ph neutro?', '¿A partir del Sol qué número de planeta es la Tierra?']
 
                 # Respuestas
                 resCiencia = ['EINSTEIN', 'H2O', 'OCHO', 'SIETE', 'TRES']
 
                 errores = 0  # Numero de veces que se equivoco el usuario
-                
+
                 hayganador = False  # ¿Hay ganador?
 
                 # Crear Juego
@@ -338,12 +366,15 @@ ___  ___      _                       _   _
 
                 linea = []  # Lista donde estaran _ _ _ _ _ _ ...
 
-                letras = len(resCiencia[pregunta])  # Cuántas letras tiene nuestra respuesta
+                # Cuántas letras tiene nuestra respuesta
+                letras = len(resCiencia[pregunta])
 
-                for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                    linea.append('_')  # Agregamos una '_' para cada letra de la respuesta
-                
-                #*****************************************************************************
+                # For que se repite para la cantidad de letras de la respuesta
+                for i in range(letras):
+                    # Agregamos una '_' para cada letra de la respuesta
+                    linea.append('_')
+
+                # *****************************************************************************
 
                 # El juego se repite hasta que haya un ganador
                 while hayganador == False:  # Mientras no haya ganador hacer:
@@ -354,11 +385,13 @@ ___  ___      _                       _   _
                     print('\tCiencia\n')
                     # Imprime la tabla de acuerdo a cuantos errores tenga el usuario
                     print(AHORCADO[errores]+'\n')
-                    print(pregCiencia[pregunta]+'\n')  # Muestra una pregunta al azar
+                    # Muestra una pregunta al azar
+                    print(pregCiencia[pregunta]+'\n')
 
                     # LINEAS
 
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
                         # Imprime lo que tengamos en la lista 'linea' sin salto de linea
                         print(linea[i], end=' ')
                     print('\n')  # Hacemos un salto de linea
@@ -368,13 +401,15 @@ ___  ___      _                       _   _
                     # COMPROBAMOS SI HAY GANADOR
 
                     contador = 0  # Contador
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                        if linea[i] != '_':  # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
+                        # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                        if linea[i] != '_':
                             contador = contador+1  # Si es que no tiene un '_' sumamos 1 al contador
 
                     if contador == letras:  # Si 'linea' tiene letras en vez de '_' significa que adivino todo
                         system('cls')  # Limpiar pantalla
-                        print ('''
+                        print('''
                         
                             
                                 ██╗   ██╗██╗ ██████╗████████╗ ██████╗ ██████╗ ██╗ █████╗ ██╗██╗██╗
@@ -388,6 +423,7 @@ ___  ___      _                       _   _
                         ''')
                         print('\n\t\tFELICIDADES')
                         print('\nHas conseguido acertar todas las letras')
+                        system('pause')
                         hayganador = True  # Indicamos que hay ganador
                         break  # Salimos del while - Termina el juego
 
@@ -408,7 +444,8 @@ ___  ___      _                       _   _
 
 
                         ''')
-                        print('\nLo sentimos no conseguido acertar todas las letras')
+                        print('\nLo sentimos no conseguido acertar todas las letras\n')
+                        system('pause')
                         break  # Salimos del while - Termina el juego
 
                     # ----------------------------------------------------------------------------------------
@@ -421,22 +458,25 @@ ___  ___      _                       _   _
 
                     # BUSCAMOS LA LETRA EN LA RESPUESTA
 
-                    for x in range(letras): # For que se repite para la cantidad de letras de la respuesta
-                        if letra == resCiencia[pregunta][x]: # Si 'letra' es igual a respuesta[letra actual]
-                            linea[x] = letra # Reemplazamos '_' por la 'letra'
-                            encontrado = True # Indicamos que encotramos la 'letra' en la respuesta
-                        elif x == letras-1 and encontrado == False: 
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for x in range(letras):
+                        # Si 'letra' es igual a respuesta[letra actual]
+                        if letra == resCiencia[pregunta][x]:
+                            linea[x] = letra  # Reemplazamos '_' por la 'letra'
+                            encontrado = True  # Indicamos que encotramos la 'letra' en la respuesta
+                        elif x == letras-1 and encontrado == False:
                             # Si estamos en la ultima vuelta y no se ha encontrado:
-                            print(":'( "+letra+' no esta') # Indicamos que no esta
-                            errores = errores+1 # Agregamos un error al usuario
-                            system('pause') # Nos pide una tecla para continuar
-
+                            # Indicamos que no esta
+                            print(":'( "+letra+' no esta')
+                            errores = errores+1  # Agregamos un error al usuario
+                            # Nos pide una tecla para continuar
+                            system('pause')
 
             elif opc == 2:
                 system('cls')
-                #*****************************************************************************
-                # Creamos un Juego nuevo 
-                
+                # *****************************************************************************
+                # Creamos un Juego nuevo
+
                 # Preguntas
                 pregCiencia = []
 
@@ -454,12 +494,15 @@ ___  ___      _                       _   _
 
                 linea = []  # Lista donde estaran _ _ _ _ _ _ ...
 
-                letras = len(resCiencia[pregunta])  # Cuántas letras tiene nuestra respuesta
+                # Cuántas letras tiene nuestra respuesta
+                letras = len(resCiencia[pregunta])
 
-                for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                    linea.append('_')  # Agregamos una '_' para cada letra de la respuesta
-                
-                #*****************************************************************************
+                # For que se repite para la cantidad de letras de la respuesta
+                for i in range(letras):
+                    # Agregamos una '_' para cada letra de la respuesta
+                    linea.append('_')
+
+                # *****************************************************************************
 
                 # El juego se repite hasta que haya un ganador
                 while hayganador == False:  # Mientras no haya ganador hacer:
@@ -470,11 +513,13 @@ ___  ___      _                       _   _
                     print('\tCiencia\n')
                     # Imprime la tabla de acuerdo a cuantos errores tenga el usuario
                     print(AHORCADO[errores]+'\n')
-                    print(pregCiencia[pregunta]+'\n')  # Muestra una pregunta al azar
+                    # Muestra una pregunta al azar
+                    print(pregCiencia[pregunta]+'\n')
 
                     # LINEAS
 
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
                         # Imprime lo que tengamos en la lista 'linea' sin salto de linea
                         print(linea[i], end=' ')
                     print('\n')  # Hacemos un salto de linea
@@ -484,13 +529,15 @@ ___  ___      _                       _   _
                     # COMPROBAMOS SI HAY GANADOR
 
                     contador = 0  # Contador
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                        if linea[i] != '_':  # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
+                        # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                        if linea[i] != '_':
                             contador = contador+1  # Si es que no tiene un '_' sumamos 1 al contador
 
                     if contador == letras:  # Si 'linea' tiene letras en vez de '_' significa que adivino todo
                         system('cls')  # Limpiar pantalla
-                        print ('''
+                        print('''
                         
                             
                                 ██╗   ██╗██╗ ██████╗████████╗ ██████╗ ██████╗ ██╗ █████╗ ██╗██╗██╗
@@ -503,8 +550,9 @@ ___  ___      _                       _   _
 
                         ''')
                         print('\n\t\tFELICIDADES')
-                        print('\nHas conseguido acertar todas las letras')
+                        print('\nHas conseguido acertar todas las letras\n')
                         hayganador = True  # Indicamos que hay ganador
+                        system('pause')
                         break  # Salimos del while - Termina el juego
 
                     # COMPROBAMOS SI PERDIO
@@ -524,7 +572,8 @@ ___  ___      _                       _   _
 
 
                         ''')
-                        print('\nLo sentimos no conseguido acertar todas las letras')
+                        print('\nLo sentimos no conseguido acertar todas las letras\n')
+                        system('pause')
                         break  # Salimos del while - Termina el juego
 
                     # ----------------------------------------------------------------------------------------
@@ -537,23 +586,25 @@ ___  ___      _                       _   _
 
                     # BUSCAMOS LA LETRA EN LA RESPUESTA
 
-                    for x in range(letras): # For que se repite para la cantidad de letras de la respuesta
-                        if letra == resCiencia[pregunta][x]: # Si 'letra' es igual a respuesta[letra actual]
-                            linea[x] = letra # Reemplazamos '_' por la 'letra'
-                            encontrado = True # Indicamos que encotramos la 'letra' en la respuesta
-                        elif x == letras-1 and encontrado == False: 
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for x in range(letras):
+                        # Si 'letra' es igual a respuesta[letra actual]
+                        if letra == resCiencia[pregunta][x]:
+                            linea[x] = letra  # Reemplazamos '_' por la 'letra'
+                            encontrado = True  # Indicamos que encotramos la 'letra' en la respuesta
+                        elif x == letras-1 and encontrado == False:
                             # Si estamos en la ultima vuelta y no se ha encontrado:
-                            print(":'( "+letra+' no esta') # Indicamos que no esta
-                            errores = errores+1 # Agregamos un error al usuario
-                            system('pause') # Nos pide una tecla para continuar
+                            # Indicamos que no esta
+                            print(":'( "+letra+' no esta')
+                            errores = errores+1  # Agregamos un error al usuario
+                            # Nos pide una tecla para continuar
+                            system('pause')
 
-                
-                
             elif opc == 3:
                 system('cls')
-                #*****************************************************************************
-                # Creamos un Juego nuevo 
-                
+                # *****************************************************************************
+                # Creamos un Juego nuevo
+
                 # Preguntas
                 pregCiencia = []
 
@@ -571,12 +622,15 @@ ___  ___      _                       _   _
 
                 linea = []  # Lista donde estaran _ _ _ _ _ _ ...
 
-                letras = len(resCiencia[pregunta])  # Cuántas letras tiene nuestra respuesta
+                # Cuántas letras tiene nuestra respuesta
+                letras = len(resCiencia[pregunta])
 
-                for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                    linea.append('_')  # Agregamos una '_' para cada letra de la respuesta
-                
-                #*****************************************************************************
+                # For que se repite para la cantidad de letras de la respuesta
+                for i in range(letras):
+                    # Agregamos una '_' para cada letra de la respuesta
+                    linea.append('_')
+
+                # *****************************************************************************
 
                 # El juego se repite hasta que haya un ganador
                 while hayganador == False:  # Mientras no haya ganador hacer:
@@ -587,11 +641,13 @@ ___  ___      _                       _   _
                     print('\tCiencia\n')
                     # Imprime la tabla de acuerdo a cuantos errores tenga el usuario
                     print(AHORCADO[errores]+'\n')
-                    print(pregCiencia[pregunta]+'\n')  # Muestra una pregunta al azar
+                    # Muestra una pregunta al azar
+                    print(pregCiencia[pregunta]+'\n')
 
                     # LINEAS
 
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
                         # Imprime lo que tengamos en la lista 'linea' sin salto de linea
                         print(linea[i], end=' ')
                     print('\n')  # Hacemos un salto de linea
@@ -601,13 +657,15 @@ ___  ___      _                       _   _
                     # COMPROBAMOS SI HAY GANADOR
 
                     contador = 0  # Contador
-                    for i in range(letras):  # For que se repite para la cantidad de letras de la respuesta
-                        if linea[i] != '_':  # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for i in range(letras):
+                        # Comprobamos si la posicion actual de 'linea' NO tiene un '_'
+                        if linea[i] != '_':
                             contador = contador+1  # Si es que no tiene un '_' sumamos 1 al contador
 
                     if contador == letras:  # Si 'linea' tiene letras en vez de '_' significa que adivino todo
                         system('cls')  # Limpiar pantalla
-                        print ('''
+                        print('''
                         
                             
                                 ██╗   ██╗██╗ ██████╗████████╗ ██████╗ ██████╗ ██╗ █████╗ ██╗██╗██╗
@@ -620,8 +678,9 @@ ___  ___      _                       _   _
 
                         ''')
                         print('\n\t\tFELICIDADES')
-                        print('\nHas conseguido acertar todas las letras')
+                        print('\nHas conseguido acertar todas las letras\n')
                         hayganador = True  # Indicamos que hay ganador
+                        system('pause')
                         break  # Salimos del while - Termina el juego
 
                     # COMPROBAMOS SI PERDIO
@@ -641,7 +700,8 @@ ___  ___      _                       _   _
 
 
                         ''')
-                        print('\nLo sentimos no conseguido acertar todas las letras')
+                        print('\nLo sentimos no conseguido acertar todas las letras\n')
+                        system('pause')
                         break  # Salimos del while - Termina el juego
 
                     # ----------------------------------------------------------------------------------------
@@ -654,15 +714,19 @@ ___  ___      _                       _   _
 
                     # BUSCAMOS LA LETRA EN LA RESPUESTA
 
-                    for x in range(letras): # For que se repite para la cantidad de letras de la respuesta
-                        if letra == resCiencia[pregunta][x]: # Si 'letra' es igual a respuesta[letra actual]
-                            linea[x] = letra # Reemplazamos '_' por la 'letra'
-                            encontrado = True # Indicamos que encotramos la 'letra' en la respuesta
-                        elif x == letras-1 and encontrado == False: 
+                    # For que se repite para la cantidad de letras de la respuesta
+                    for x in range(letras):
+                        # Si 'letra' es igual a respuesta[letra actual]
+                        if letra == resCiencia[pregunta][x]:
+                            linea[x] = letra  # Reemplazamos '_' por la 'letra'
+                            encontrado = True  # Indicamos que encotramos la 'letra' en la respuesta
+                        elif x == letras-1 and encontrado == False:
                             # Si estamos en la ultima vuelta y no se ha encontrado:
-                            print(":'( "+letra+' no esta') # Indicamos que no esta
-                            errores = errores+1 # Agregamos un error al usuario
-                            system('pause') # Nos pide una tecla para continuar
+                            # Indicamos que no esta
+                            print(":'( "+letra+' no esta')
+                            errores = errores+1  # Agregamos un error al usuario
+                            # Nos pide una tecla para continuar
+                            system('pause')
             elif opc == 4:
                 seg = False
                 system('pause')
@@ -675,4 +739,3 @@ ___  ___      _                       _   _
     else:
         print('ERROR: Opción Inválida')
         system('pause')
-
