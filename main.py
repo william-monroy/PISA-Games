@@ -200,8 +200,7 @@ ___  ___      _                       _   _
             elif op == 2:
                 system('cls')
                 print('INTERMEDIO\n')
-                print(
-                    'Escribe las respuestas de las prguntas de la forma más simplificada')
+                print('Escribe las respuestas de las prguntas de la forma más simplificada')
                 p1 = input('1. Teclea la respuesta de x + 4 = 8: ')
                 if p1 == '4':
                     print('¡Correcto!\n')
