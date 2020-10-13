@@ -99,6 +99,7 @@ while continuar == True:
         system('cls')
         cont = True
         while cont == True:
+            system('cls')
             print('''
             
 ___  ___      _                       _   _           
@@ -190,8 +191,7 @@ ___  ___      _                       _   _
                     print('INCORRECTO')
                     print('Pasos:')
                     print('Buscar el común denominador-> 6, dividir 6 por el primer denominador y multiplicar el resultado por el numerador-> 6/6=1>> 1*3=3, se hace lo mismo con la otra fracción')
-                    print(
-                        'Después, se suman los resultados -> 3+4=7, por lo que la respuesta daría 7/6')
+                    print('Después, se suman los resultados -> 3+4=7, por lo que la respuesta daría 7/6')
                     print('Se queda 7/6 como resultado porque no se puede simplificar')
                     print('Se te regresará al menú de matemáticas')
                     system('pause')
@@ -241,8 +241,7 @@ ___  ___      _                       _   _
                                 print('Pasos:')
                                 print(
                                     'Mover el -6 al otro lado del igual pero con signo contrario -> x/2 = 12 + 6; sumar los numeros -> x/2 = 18')
-                                print(
-                                    'Pasar al 2 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = 18 * 2 ->x = 36')
+                                print('Pasar al 2 con la operación contraria (se está dividiendo, pasa multiplicando) y con el mismo signo. x = 18 * 2 ->x = 36')
                                 print('La respuesta es 36')
                                 print('Se te regresará al menú de matemáticas')
                                 system('pause')
@@ -250,10 +249,8 @@ ___  ___      _                       _   _
                             system('cls')
                             print('INCORRECTO')
                             print('Pasos:')
-                            print(
-                                'Mover el -3 al otro lado del igual pero con signo contrario -> 4x = 21+3; sumar los numeros -> 4x = 24')
-                            print(
-                                'Pasar al 4 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/24 ->x = 6')
+                            print('Mover el -3 al otro lado del igual pero con signo contrario -> 4x = 21+3; sumar los numeros -> 4x = 24')
+                            print('Pasar al 4 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/24 ->x = 6')
                             print('La respuesta es 6')
                             print('Se te regresará al menú de matemáticas')
                             system('pause')
@@ -261,10 +258,8 @@ ___  ___      _                       _   _
                         system('cls')
                         print('INCORRECTO')
                         print('Pasos:')
-                        print(
-                            'Mover el 6 al otro lado del igual pero con signo contrario -> 2x = 10-6; restar los numeros -> 2x = 4')
-                        print(
-                            'Pasar al 2 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/2 ->x = 2')
+                        print('Mover el 6 al otro lado del igual pero con signo contrario -> 2x = 10-6; restar los numeros -> 2x = 4')
+                        print('Pasar al 2 con la operación contraria (se está multiplicando, pasa dividiendo) y con el mismo signo. x = 4/2 ->x = 2')
                         print('La respuesta es 2')
                         print('Se te regresará al menú de matemáticas')
                         system('pause')
@@ -281,7 +276,8 @@ ___  ___      _                       _   _
             elif op == 3:
                 system('cls')
                 print('AVANZADO\n')
-
+                print('Disponible pronto...\n')
+                system('pause')
             elif op == 4:
                 cont = False
                 system('pause')
@@ -309,13 +305,16 @@ ___  ___      _                       _   _
             opc = int(input('Escribe el número de la opción que quieras: '))
             if opc == 1:
                 system('cls')
-
+                print('Disponible pronto...\n')
+                system('pause')
             elif opc == 2:
                 system('cls')
-
+                print('Disponible pronto...\n')
+                system('pause')
             elif opc == 3:
                 system('cls')
-
+                print('Disponible pronto...\n')
+                system('pause')                
             elif opc == 4:
                 seguir = False
                 system('pause')
@@ -347,8 +346,7 @@ ___  ___      _                       _   _
                 # Creamos un Juego nuevo
 
                 # Preguntas
-                pregCiencia = ['¿Quién es el autor de E=mc^2?', 'Fórmula Química del Agua', '¿Cuántos planetas tiene el Sistema Solar?',
-                               '¿Cuál es un Ph neutro?', '¿A partir del Sol qué número de planeta es la Tierra?']
+                pregCiencia = ['¿Quién es el autor de E=mc^2?', 'Fórmula Química del Agua', '¿Cuántos planetas tiene el Sistema Solar?', '¿Cuál es un Ph neutro?', '¿A partir del Sol qué número de planeta es la Tierra?']
 
                 # Respuestas
                 resCiencia = ['EINSTEIN', 'H2O', 'OCHO', 'SIETE', 'TRES']
@@ -476,10 +474,10 @@ ___  ___      _                       _   _
                 # Creamos un Juego nuevo
 
                 # Preguntas
-                pregCiencia = []
+                pregCiencia = ['¿Cual es la formula del Dioxido de Carbono?','¿Cual es el primer elemento de la tabla Periodica?']
 
                 # Respuestas
-                resCiencia = []
+                resCiencia = ['CO2','HIDROGENO']
 
                 errores = 0  # Numero de veces que se equivoco el usuario
 
@@ -604,10 +602,10 @@ ___  ___      _                       _   _
                 # Creamos un Juego nuevo
 
                 # Preguntas
-                pregCiencia = []
+                pregCiencia = ['¿Como se llama el enlace entre un metal y un no metal?', '¿Cual es elemento de numero atomico de 50?']
 
                 # Respuestas
-                resCiencia = []
+                resCiencia = ['IONICO','ESTAÑO']
 
                 errores = 0  # Numero de veces que se equivoco el usuario
 
