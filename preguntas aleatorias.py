@@ -12,3 +12,6 @@ if res == respuesta[aleatorio]:
     print('Muy bien')
 else:
     print(correccion[aleatorio])
+
+
+    
