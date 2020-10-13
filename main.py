@@ -119,8 +119,7 @@ ___  ___      _                       _   _
             if op == 1:
                 system('cls')
                 print('PRINCIPIANTE\n')
-                print(
-                    'Escribe las respuestas de las prguntas de la forma más simplificada y en fracción')
+                print('Escribe las respuestas de las prguntas de la forma más simplificada y en fracción')
                 p1 = input('1. Teclea la respuesta de 3/6 + 2/3: ')
                 if p1 == '7/6':
                     print('¡Correcto!\n')

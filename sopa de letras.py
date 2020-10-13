@@ -96,7 +96,7 @@ def printTablero(matriz):
             cor = str(i)
         print(cor, end='  ')
         for j in range(len(matriz[i])):
-            if matriz[i][j]=='*':
+            if matriz[i][j] == '*':
                 print("\033[43;44m"+str(matriz[i][j])+"\033[0m", end=' ')
             else:
                 print(matriz[i][j], end=' ')
@@ -118,47 +118,51 @@ def seleccionar(matriz, recorrido):
     fin = input('fila,columna : ').strip().split(',')
     print(ini)
     print(fin)
-    if recorrido==1:
+    if recorrido == 1:
         letra = ''
         for j in range(conver_Letra(ini[1]), conver_Letra(fin[1])+1):
             letra = matriz[int(ini[0])][j]
             matriz[int(ini[0])][j] = '*'
-    elif recorrido==2:
+    elif recorrido == 2:
         pass
-    elif recorrido==3:
+    elif recorrido == 3:
         pass
-    elif recorrido==4:
+    elif recorrido == 4:
         pass
+
 
 def conver_Letra(letra):
     if letra == 'a':
         return 0
-    elif letra=='b':
+    elif letra == 'b':
         return 1
-    elif letra=='c':
+    elif letra == 'c':
         return 2
-    elif letra=='d':
+    elif letra == 'd':
         return 3
-    elif letra=='e':
+    elif letra == 'e':
         return 4
-    elif letra=='f':
+    elif letra == 'f':
         return 5
-    elif letra=='g':
+    elif letra == 'g':
         return 6
-    elif letra=='h':
+    elif letra == 'h':
         return 7
-    elif letra=='i':
+    elif letra == 'i':
         return 8
-    elif letra=='j':
+    elif letra == 'j':
         return 9
-    elif letra=='k':
+    elif letra == 'k':
         return 10
-    elif letra=='l':
+    elif letra == 'l':
         return 11
 
 
-llenarAleatorio(tablero)
+#llenarAleatorio(tablero)
 printTablero(tablero)
-seleccionar(tablero,1)
+seleccionar(tablero, 1)
+print('------------------------------')
+printTablero(tablero)
+seleccionar(tablero, 1)
 print('------------------------------')
 printTablero(tablero)
