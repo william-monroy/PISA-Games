@@ -166,3 +166,6 @@ printTablero(tablero)
 seleccionar(tablero, 1)
 print('------------------------------')
 printTablero(tablero)
+
+
+
