@@ -1,0 +1,20 @@
+NIVEL Principiante
+7/6
+17/18
+1/12
+7/20
+1/14
+
+NIVEL Intermedio
+4
+2
+6
+36
+-54
+
+NIVEL Avanzado
+1958
+15
+1997
+25
+17

@@ -1,0 +1,20 @@
+NIVEL Principiante
+Teclea la respuesta de 3/6 + 2/3:
+Teclea la respuesta de 4/9 + 1/2:
+Teclea la respuesta de 5/6 - 6/8:
+Teclea la respuesta de 3/5 - 2/8:
+Teclea la respuesta de 3/7 * 1/6:
+
+NIVEL Intermedio
+Teclea la respuesta de x + 4 = 8:
+Teclea la respuesta de 2x + 6 = 10:
+Teclea la respuesta de 4x - 3 = 21:
+Teclea la respuesta de (x/2) - 6 = 12:
+Teclea la respuesta de (x/3) + 23 = 5:
+
+NIVEL Avanzado
+Calcular el año de nacimiento de Ricardo sabiendo que en el año 2003 su edad era el triple que la que tenía en el año 1973:
+Si dentro de 10 años Adriana tiene el triple de la edad que tiene ahora, ¿qué edad tendrá entonces?
+Calcular el año de nacimiento de Yolanda sabiendo que en 2039 su edad será el doble que en 2018:
+Si dentro de 15 años Eduardo tiene el doble de edad que la que tenía hace 5 años, ¿qué edad tiene ahora?
+Si dentro de 5 años la edad de Jesús será el triple que la que tenía hace 3 años, ¿qué edad tendrá dentro de 10 años?

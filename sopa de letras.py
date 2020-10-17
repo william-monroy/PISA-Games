@@ -81,7 +81,31 @@ for p in range(len(palabras)):
                     letra += 1
                 posible = True
     elif r_llenar == 3:
-        pass
+        # Arriba
+        posible = False
+        while not posible:
+            # Posicion inicial de Intento de llenado
+            r_pos_i = random.randint(0, 11)
+            r_pos_j = random.randint(0, 11)
+            disponibles = 12 - (12-(r_pos_i))
+            while disponibles < l:
+                r_pos_i = random.randint(0, 11)
+                disponibles = 12 - (12-r_pos_i)
+            vacio = False
+            cont = 0
+            # i -> filas
+            # j -> columnas
+            for i in range(r_pos_i, r_pos_i-l,-1):
+                if tablero[i][r_pos_i] == ' ':
+                    cont += 1
+            if cont == l:
+                vacio = True
+            if vacio==True:
+                letra = 0
+                for j in range(r_pos_i, r_pos_i-l,-1):
+                    tablero[i][r_pos_i] = palabras[p][letra]
+                    letra += 1
+                posible = True
     elif r_llenar == 4:
         pass
 
