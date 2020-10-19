@@ -1,0 +1,37 @@
+Sistema Operativo: Windows
+Configura los colores predeterminados de primer y segundo plano de la consola.
+
+COLOR [attr]
+
+  attr         Especifica el atributo de color de la salida de consola.
+
+Los atributos de color están especificados con DOS dígitos hexadecimales (el primero
+corresponde al segundo plano; el segundo al primer plano). Los dígitos
+pueden coincidir con cualquiera de los siguientes valores:
+
+    0 = Negro       8 = Gris
+Presione una tecla para continuar . . .
+
+
+Los atributos de color están especificados con DOS dígitos hexadecimales (el primero                                a de consola.
+corresponde al segundo plano; el segundo al primer plano). Los dígitos                                               hexadecimales (el primero
+pueden coincidir con cualquiera de los siguientes valores: Los dígitos
+
+    0 = Negro       8 = Gris
+    1 = Azul        9 = Azul claro
+    2 = Verde       A = Verde claro
+    3 = Aguamarina        B = Aguamarina claro
+    4 = Rojo        C = Rojo claro
+    5 = Púrpura     D = Púrpura claro
+    6 = Amarillo    E = Amarillo claro
+    7 = Blanco      F = Blanco brillante
+
+Si no se indican argumentos, este comando restaura el color que tenía
+cuando se inició CMD.EXE. Este valor proviene de la ventanel modificador de línea de comandos /T o el valor del registro
+DefaultColor.
+
+El comando COLOR configura ERRORLEVEL a 1 si se realiza un intento de ejecutar
+el comando COLOR con el mismo color de primer y segundo
+plano.
+
+Ejemplo: "COLOR fc" crea rojo claro sobre blanco brillantePS C:\Users\Ana Paula Pedroza\Documents\TEC\TEC 1 AÑO\SEMESTRE 1\PENSAMIENTO COMPUTACIONAL\Python> thon\act17\ro.py">>P

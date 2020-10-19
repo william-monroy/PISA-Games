@@ -2,14 +2,100 @@
 from os import system
 import time
 import random  # Importamos random para numeros al azar
+import platform
+
+# COMPATIBILIDAD DE SISTEMA OPERATIVO ========================================
+
+sistema = platform.system()
+SO=sistema
+#print("Sistema Operativo: {}".format(SO))    
+
+
+def limpiar():
+    if SO == 'Windows':
+        system('cls')
+    elif SO == 'Darwin' or SO == 'Linux':
+        system('clear')
+
+def pausa():
+    if SO == 'Windows':
+        system('pause')
+    elif SO == 'Darwin' or SO == 'Linux':
+        input('Presione enter para continuar...')
+
+def colores(color):
+    if color == 'rojo':
+        if SO == 'Windows':
+            system('color 4')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 1')
+    elif color == 'verde':
+        if SO == 'Windows':
+            system('color 2')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 2')
+    elif color == 'amarillo':
+        if SO == 'Windows':
+            system('color 6')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 3')
+    elif color == 'celeste':
+        if SO == 'Windows':
+            system('color 3')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 6')
+    elif color == 'azul':
+        if SO == 'Windows':
+            system('color 1')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 4')
+    elif color == 'morado':
+        if SO == 'Windows':
+            system('color 5')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 5')
+    elif color == 'blanco':
+        if SO == 'Windows':
+            system('color 7')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 7')
+    elif color == 'gris':
+        if SO == 'Windows':
+            system('color 8')
+        elif SO == 'Darwin' or SO == 'Linux':
+            system('tput setaf 8')
+
+def inf_colores():
+    if SO == 'Windows':
+        print('''0 = Negro       8 = Gris
+1 = Azul        
+2 = Verde
+3 = Celeste
+4 = Rojo
+5 = Púrpura
+6 = Amarillo
+7 = Blanco''')
+
+    elif SO == 'Darwin' or SO == 'Linux':
+        print('''1. Rojo
+2. Verde
+3. Amarillo
+4. Azul
+5. Morado
+6. Celeste
+7. Blanco
+8. Gris''')
+
+# ============================================================================
+
 system('color 2')
-system('cls')
+limpiar()
 # LETRAS ASCII
 # http://patorjk.com/software/taag/#p=display&f=ANSI%20Shadow&t=VICTORIA!!!%0A
 from pygame import mixer
 mixer.init()
-#mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\init.mp3')
-system('cls')
+#mixer.music.load('\music\init.mp3')
+limpiar()
 def rint(txt,error):
     while True:
         try:
@@ -19,7 +105,7 @@ def rint(txt,error):
             print(error)
 #mixer.music.play()
 mixer.music.set_volume(0.25)
-system('cls')
+limpiar()
 print('''
 
  ██████  █████  ██████   ██████   █████  ███    ██ ██████   ██████           
@@ -30,7 +116,7 @@ print('''
 
 ''')
 time.sleep(1)
-system('cls')
+limpiar()
 print('''
 
  ██████  █████  ██████   ██████   █████  ███    ██ ██████   ██████           
@@ -41,7 +127,7 @@ print('''
 
 ''')
 time.sleep(1)
-system('cls')
+limpiar()
 print('''
 
  ██████  █████  ██████   ██████   █████  ███    ██ ██████   ██████           
@@ -52,7 +138,7 @@ print('''
 
 ''')
 time.sleep(1)
-system('cls')
+limpiar()
 print('''
 
  ██████  █████  ██████   ██████   █████  ███    ██ ██████   ██████           
@@ -69,7 +155,7 @@ for i in range(100):
         r=random.randint(0,1)
         print(r,end='')
     print()
-system('cls')
+limpiar()
 mixer.music.stop()
 
 # ****************************************************************
@@ -140,13 +226,13 @@ linea = []  # Lista donde estaran _ _ _ _ _ _ ...
 # *****************************************************************
 
 
-system('cls')
+limpiar()
 
 continuar = True
 
 while continuar == True:
-    system('cls')
-    mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\main.mp3')
+    limpiar()
+    mixer.music.load('music/main.mp3')
     mixer.music.play()
     mixer.music.set_volume(0.4)
     system('color 7')
@@ -181,13 +267,12 @@ _____██░░░░░░░░░██              ██████╔�
     opcion = rint('Escribe el número de la opción que quieras: ','Error: Opcion Incorrecta')
     if opcion == 1:
         mixer.music.stop()
-        mixer.init()
-        mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\matematica.mp3')
+        mixer.music.load('music/mate.mp3')
         mixer.music.play()
-        system('cls')
+        limpiar()
         cont = True
         while cont == True:
-            system('cls')
+            limpiar()
             print('''
             
 ___  ___      _                       _   _           
@@ -206,7 +291,7 @@ ___  ___      _                       _   _
             print('4) Regresar\n')
             op = rint('Escribe el número de la opción que quieras: ','Error: Opcion Incorrecta')
             if op == 1:
-                system('cls')
+                limpiar()
                 # PRINCIPIANTE
                 
                 pregunta = []
@@ -241,7 +326,7 @@ ___  ___      _                       _   _
                 repetidas=[]
                 correcto=True
                 while correcto==True:
-                    system('cls')
+                    limpiar()
                     print('PRINCIPIANTE\n')
                     print('Escribe las respuestas de las prguntas de la forma más simplificada y en fracción\n')
                     if len(repetidas)==len(pregunta):
@@ -258,14 +343,14 @@ ___  ___      _                       _   _
                         res = input('\nRESPUESTA: ')
                         if res == respuesta[aleatorio]:
                             print('Muy bien')
-                            system('pause')
+                            pausa()
                         else:
                             print(correccion[aleatorio])
-                            system('pause')
+                            pausa()
                             correcto=False
                 
             elif op == 2:
-                system('cls')
+                limpiar()
                 # INTERMEDIO
 
                 pregunta = []
@@ -300,7 +385,7 @@ ___  ___      _                       _   _
                 repetidas=[]
                 correcto=True
                 while correcto==True:
-                    system('cls')
+                    limpiar()
                     print('INTERMEDIO\n')
                     print('Escribe las respuestas de las prguntas de la forma más simplificada\n')
                     if len(repetidas)==len(pregunta):
@@ -317,13 +402,13 @@ ___  ___      _                       _   _
                         res = input('\nRESPUESTA: ')
                         if res == respuesta[aleatorio]:
                             print('Muy bien')
-                            system('pause')
+                            pausa()
                         else:
                             print(correccion[aleatorio])
-                            system('pause')
+                            pausa()
                             correcto=False
             elif op == 3:
-                system('cls')
+                limpiar()
                 # AVANZADO
 
                 pregunta = []
@@ -358,7 +443,7 @@ ___  ___      _                       _   _
                 repetidas=[]
                 correcto=True
                 while correcto==True:
-                    system('cls')
+                    limpiar()
                     print('AVANZADO\n')
                     if len(repetidas)==len(pregunta):
                         print('Juego terminado')
@@ -374,20 +459,20 @@ ___  ___      _                       _   _
                         res = input('\nRESPUESTA: ')
                         if res == respuesta[aleatorio]:
                             print('Muy bien')
-                            system('pause')
+                            pausa()
                         else:
                             print(correccion[aleatorio])
-                            system('pause')
+                            pausa()
                             correcto=False
             elif op == 4:
                 cont = False
-                system('pause')
+                pausa()
     elif opcion == 2:
         mixer.music.stop()
         mixer.init()
-        mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\historia.mp3')
+        mixer.music.load('music/historia.mp3')
         mixer.music.play()
-        system('cls')
+        limpiar()
         seguir = True
         while seguir == True:
             print('''
@@ -417,29 +502,29 @@ ___  ___      _                       _   _
             print('4) Regresar\n')
             opc = rint('Escribe el número de la opción que quieras: ','Error: Opcion Incorrecta')
             if opc == 1:
-                system('cls')
+                limpiar()
                 print('Disponible pronto...\n')
-                system('pause')
+                pausa()
             elif opc == 2:
-                system('cls')
+                limpiar()
                 print('Disponible pronto...\n')
-                system('pause')
+                pausa()
             elif opc == 3:
-                system('cls')
+                limpiar()
                 print('Disponible pronto...\n')
-                system('pause')                
+                pausa()                
             elif opc == 4:
                 seguir = False
-                system('pause')
+                pausa()
     elif opcion == 3:
         mixer.music.stop()
         mixer.init()
-        mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\ciencia.mp3')
+        mixer.music.load('music/cien.mp3')
         mixer.music.play()
-        system('cls')
+        limpiar()
         seg = True
         while seg == True:
-            system('cls')
+            limpiar()
             print('''
 
                          (``',
@@ -496,7 +581,7 @@ ___  ___      _                       _   _
 
                     # TALBERO
 
-                    system('cls')  # Limpiar pantalla
+                    limpiar()  # Limpiar pantalla
                     print('\tCiencia\n')
                     # Imprime la tabla de acuerdo a cuantos errores tenga el usuario
                     print(AHORCADO[errores]+'\n')
@@ -523,7 +608,7 @@ ___  ___      _                       _   _
                             contador = contador+1  # Si es que no tiene un '_' sumamos 1 al contador
 
                     if contador == letras:  # Si 'linea' tiene letras en vez de '_' significa que adivino todo
-                        system('cls')  # Limpiar pantalla
+                        limpiar()  # Limpiar pantalla
                         print('''
                         
                             
@@ -538,7 +623,7 @@ ___  ___      _                       _   _
                         ''')
                         print('\n\t\tFELICIDADES')
                         print('\nHas conseguido acertar todas las letras')
-                        system('pause')
+                        pausa()
                         hayganador = True  # Indicamos que hay ganador
                         break  # Salimos del while - Termina el juego
 
@@ -546,7 +631,7 @@ ___  ___      _                       _   _
 
                     # Si los errores son igaules a la cantidad de oportunidades hacer:
                     if errores == len(AHORCADO)-1:
-                        system('cls')  # Limpiar pantalla
+                        limpiar()  # Limpiar pantalla
                         print('''
 
 
@@ -560,7 +645,7 @@ ___  ___      _                       _   _
 
                         ''')
                         print('\nLo sentimos no conseguido acertar todas las letras\n')
-                        system('pause')
+                        pausa()
                         break  # Salimos del while - Termina el juego
 
                     # ----------------------------------------------------------------------------------------
@@ -585,10 +670,10 @@ ___  ___      _                       _   _
                             print(":'( "+letra+' no esta')
                             errores = errores+1  # Agregamos un error al usuario
                             # Nos pide una tecla para continuar
-                            system('pause')
+                            pausa()
 
             if opc == 1:
-                system('cls')
+                limpiar()
                 # *****************************************************************************
                 # Creamos un Juego nuevo
 
@@ -601,7 +686,7 @@ ___  ___      _                       _   _
                 ahorcado(pregCiencia,resCiencia)
 
             elif opc == 2:
-                system('cls')
+                limpiar()
                 # *****************************************************************************
                 # Creamos un Juego nuevo
 
@@ -614,7 +699,7 @@ ___  ___      _                       _   _
                 ahorcado(pregCiencia,resCiencia)
 
             elif opc == 3:
-                system('cls')
+                limpiar()
                 # *****************************************************************************
                 # Creamos un Juego nuevo
 
@@ -628,24 +713,24 @@ ___  ___      _                       _   _
 
             elif opc == 4:
                 seg = False
-                system('pause')
+                pausa()
             else:
                 print('ERROR: Opción Inválida')
-                system('pause')
+                pausa()
     elif opcion == 4:
         mixer.music.stop()
         mixer.init()
-        mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\champions.mp3')
+        mixer.music.load('music/champions.mp3')
         mixer.music.play()
-        system('cls')
-        system('pause')
+        limpiar()
+        pausa()
                 
     elif opcion == 5:
         mixer.music.stop()
         mixer.init()
-        mixer.music.load('C:\\Users\\William\\Documents\\TEC21\\Pensamiento Computacional\\PISA Games\\music\\creditos.mp3')
+        mixer.music.load('music/creditos.mp3')
         mixer.music.play()
-        system('cls')
+        limpiar()
         print('''
 
         ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
@@ -679,7 +764,7 @@ ___  ___      _                       _   _
 
         ''')
         time.sleep(5)
-        system('cls')
+        limpiar()
         print('''
    ===============================================================================================================
    ===============================================================================================================
@@ -695,7 +780,7 @@ ___  ___      _                       _   _
                                                              
         ''')
         time.sleep(5)
-        system('cls')
+        limpiar()
         system('color 2')
         print('''
                          ██╗    ██╗██╗██╗     ██╗     ██╗ █████╗ ███╗   ███╗
@@ -748,7 +833,7 @@ ___  ___      _                       _   _
         +++++=+**:                               ......:........................:------=====-=:...
         ''')
         time.sleep(3)
-        system('cls')
+        limpiar()
         system('color 5')
         print('''
         ███████╗███████╗███╗   ██╗██╗   ██╗███████╗ ██████╗███████╗████████╗██╗  ██╗
@@ -810,7 +895,7 @@ ___  ___      _                       _   _
         ''')
         time.sleep(3)
         system('color 4')
-        system('cls')
+        limpiar()
         print('''
                             █████╗ ███╗   ██╗ █████╗ 
                            ██╔══██╗████╗  ██║██╔══██╗
@@ -872,7 +957,7 @@ ___  ___      _                       _   _
 
         ''')
         time.sleep(3)
-        system('cls')
+        limpiar()
         system('color 7')
         print('''
                                                                                 
@@ -923,13 +1008,13 @@ ___  ___      _                       _   _
                                                                         
 
         ''')
-        system('pause')
+        pausa()
     elif opcion == 6:
-        system('cls')
+        limpiar()
         continuar = False
     else:
         print('ERROR: Opción Inválida')
-        system('pause')
+        pausa()
 
 
         

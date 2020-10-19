@@ -1,7 +1,7 @@
 import random
 from os import system
 
-system('cls')
+#system('cls')
 
 tablero = [[' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
            [' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' ', ' '],
@@ -81,6 +81,7 @@ for p in range(len(palabras)):
                     letra += 1
                 posible = True
     elif r_llenar == 3:
+
         # Arriba
         posible = False
         while not posible:
